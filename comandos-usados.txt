@@ -1,0 +1,36 @@
+composer create-project laravel/laravel Mini-CRM
+
+composer require fakerphp/faker
+
+composer require laravel/ui
+php artisan ui bootstrap --auth
+npm install
+npm run dev
+npm install resolve-url-loader@^3.1.2 --save-dev --legacy-peer-deps
+npm run dev
+
+php artisan storage:link
+
+php artisan migrate
+
+php artisan db:seed
+
+php artisan serve
+
+----------------------------------------------------------------------
+
+php artisan make:model Empleado -mcr
+php artisan make:model Empresa -mcr
+
+php artisan route:list
+
+php artisan make:seeder UsersTableSeeder
+
+php artisan make:factory EmpresaFactory --model=Empresa
+php artisan make:factory EmpleadoFactory --model=Empleado
+
+php artisan make:seeder EmpresasTableSeeder
+php artisan make:seeder EmpleadosTableSeeder
+
+composer require laraveles/spanish
+php artisan laraveles:install-lang
