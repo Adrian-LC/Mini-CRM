@@ -5,6 +5,7 @@ namespace Database\Factories;
 use App\Models\Empresa;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Storage;
 
 class EmpresaFactory extends Factory
 {
@@ -22,6 +23,7 @@ class EmpresaFactory extends Factory
      */
     public function definition()
     {
+        Storage::makeDirectory('public/empresa');
         $dir = storage_path('app/public/empresa');
 
         return [
