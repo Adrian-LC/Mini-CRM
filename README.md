@@ -14,7 +14,6 @@
 - Hacer una copia de .env.example, llamarlo .env y configurarlo
 - php artisan key:generate
 - composer require fakerphp/faker
-- php artisan storage:link
 - php artisan migrate
 - php artisan db:seed
 - php artisan serve
